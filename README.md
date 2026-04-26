@@ -6,7 +6,9 @@
 
 ## Map of branches
 - `empty`: robot + checkered floor.
-- `7-markers`: 7 130mm AruCo markers ID's 1 - 7 1m in front of the robot on the floor in a horizontal line.
+ - `7-markers`: 7 130mm AruCo markers ID's 1 - 7 1m in front of the robot on the floor in a horizontal line.
+
+## About
 
 <img src="https://github.com/hello-robot/stretch_mujoco/raw/main/docs/images/stretch_mujoco.png" title="Stretch In Kitchen" width="100%">
 
