@@ -33,14 +33,14 @@
   <worldbody>
     <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
     <geom name="floor" size="0 0 0.05" type="plane" material="floor"/>
-    <body name="aruco_row" pos="1 0 0">
-      <geom name="aruco_1_geom" pos="0 0.69 0.0005" euler="0 0 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_1_mat" contype="0" conaffinity="0"/>
-      <geom name="aruco_2_geom" pos="0 0.46 0.0005" euler="0 0 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_2_mat" contype="0" conaffinity="0"/>
-      <geom name="aruco_3_geom" pos="0 0.23 0.0005" euler="0 0 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_3_mat" contype="0" conaffinity="0"/>
-      <geom name="aruco_4_geom" pos="0 0 0.0005" euler="0 0 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_4_mat" contype="0" conaffinity="0"/>
-      <geom name="aruco_5_geom" pos="0 -0.23 0.0005" euler="0 0 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_5_mat" contype="0" conaffinity="0"/>
-      <geom name="aruco_6_geom" pos="0 -0.46 0.0005" euler="0 0 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_6_mat" contype="0" conaffinity="0"/>
-      <geom name="aruco_7_geom" pos="0 -0.69 0.0005" euler="0 0 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_7_mat" contype="0" conaffinity="0"/>
+    <body name="aruco_row" pos="1.5 0 1.2">
+      <geom name="aruco_1_geom" pos="0 0.69 0.0005" euler="0 -1.57 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_1_mat" contype="0" conaffinity="0"/>
+      <geom name="aruco_2_geom" pos="0 0.46 0.0005" euler="0 -1.57 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_2_mat" contype="0" conaffinity="0"/>
+      <geom name="aruco_3_geom" pos="0 0.23 0.0005" euler="0 -1.57 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_3_mat" contype="0" conaffinity="0"/>
+      <geom name="aruco_4_geom" pos="0 0 0.0005" euler="0 -1.57 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_4_mat" contype="0" conaffinity="0"/>
+      <geom name="aruco_5_geom" pos="0 -0.23 0.0005" euler="0 -1.57 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_5_mat" contype="0" conaffinity="0"/>
+      <geom name="aruco_6_geom" pos="0 -0.46 0.0005" euler="0 -1.57 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_6_mat" contype="0" conaffinity="0"/>
+      <geom name="aruco_7_geom" pos="0 -0.69 0.0005" euler="0 -1.57 -1.57" type="box" size="0.065 0.065 0.0005" material="aruco_7_mat" contype="0" conaffinity="0"/>
     </body>
   </worldbody>
 </mujoco>
