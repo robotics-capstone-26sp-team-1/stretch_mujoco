@@ -14,6 +14,7 @@
     <material name="floor" texture="floor" texrepeat="1 1" texuniform="true" reflectance="0.1"/>
     <texture type="skybox" builtin="gradient" rgb1="0.44 0.80 1.00" rgb2="1 1 1" width="512" height="3072"/>
 
+    <texture name="aruco_0" type="2d" file="6x6_1000-0.png"/>
     <texture name="aruco_1" type="2d" file="6x6_1000-1.png"/>
     <texture name="aruco_2" type="2d" file="6x6_1000-2.png"/>
     <texture name="aruco_3" type="2d" file="6x6_1000-3.png"/>
@@ -21,19 +22,21 @@
     <texture name="aruco_5" type="2d" file="6x6_1000-5.png"/>
     <texture name="aruco_6" type="2d" file="6x6_1000-6.png"/>
     <texture name="aruco_7" type="2d" file="6x6_1000-7.png"/>
-    <material name="aruco_1_mat" texture="aruco_1" specular="0.2" shininess="0.05"/>
-    <material name="aruco_2_mat" texture="aruco_2" specular="0.2" shininess="0.05"/>
-    <material name="aruco_3_mat" texture="aruco_3" specular="0.2" shininess="0.05"/>
-    <material name="aruco_4_mat" texture="aruco_4" specular="0.2" shininess="0.05"/>
-    <material name="aruco_5_mat" texture="aruco_5" specular="0.2" shininess="0.05"/>
-    <material name="aruco_6_mat" texture="aruco_6" specular="0.2" shininess="0.05"/>
-    <material name="aruco_7_mat" texture="aruco_7" specular="0.2" shininess="0.05"/>
+    <material name="aruco_0_mat" texture="aruco_0" specular="0.0" shininess="0.0"/>
+    <material name="aruco_1_mat" texture="aruco_1" specular="0.0" shininess="0.0"/>
+    <material name="aruco_2_mat" texture="aruco_2" specular="0.0" shininess="0.0"/>
+    <material name="aruco_3_mat" texture="aruco_3" specular="0.0" shininess="0.0"/>
+    <material name="aruco_4_mat" texture="aruco_4" specular="0.0" shininess="0.0"/>
+    <material name="aruco_5_mat" texture="aruco_5" specular="0.0" shininess="0.0"/>
+    <material name="aruco_6_mat" texture="aruco_6" specular="0.0" shininess="0.0"/>
+    <material name="aruco_7_mat" texture="aruco_7" specular="0.0" shininess="0.0"/>
   </asset>
 
   <worldbody>
     <light pos="0 0 1.5" dir="0 0 -1" directional="true"/>
     <geom name="floor" size="0 0 0.05" type="plane" material="floor"/>
-    <body name="aruco_row" pos="0 -0.75 0.762">
+    <body name="aruco_row" pos="0 -1.5 0.762">
+      <geom name="aruco_0_geom" pos="0.8 0.25 0" euler="-1.57 -0.6 3.14" type="box" size="0.04 0.04 0.0005" material="aruco_0_mat" contype="0" conaffinity="0"/>
       <geom name="aruco_1_geom" pos="0.345 0 0" euler="-1.57 0 3.14" type="box" size="0.04 0.04 0.0005" material="aruco_1_mat" contype="0" conaffinity="0"/>
       <geom name="aruco_2_geom" pos="0.230 0 0" euler="-1.57 0 3.14" type="box" size="0.04 0.04 0.0005" material="aruco_2_mat" contype="0" conaffinity="0"/>
       <geom name="aruco_3_geom" pos="0.115 0 0" euler="-1.57 0 3.14" type="box" size="0.04 0.04 0.0005" material="aruco_3_mat" contype="0" conaffinity="0"/>
